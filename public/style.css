@@ -1,0 +1,49 @@
+:root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#15324f;background:#fff;font-synthesis:none;line-height:1.5}
+*{box-sizing:border-box}
+body{margin:0}
+.brand-header,main{width:min(100% - 48px,700px);margin-inline:auto}
+.brand-header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:32px}
+.brand-lockup{display:flex;align-items:center;gap:22px;font-size:18px;font-weight:600}
+.brand-lockup img{display:block;object-fit:contain}
+.runtime-label{font-size:12px;color:#677789}
+main{margin-top:20px;margin-bottom:56px}
+h1{font-size:34px;letter-spacing:-1px;line-height:1.2;font-weight:650;margin:0 0 36px}
+label,h2{font-size:14px;font-weight:600}
+h2{margin:0 0 12px}
+.label-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;gap:16px}
+button,input,textarea{font:inherit}
+button,a,summary{touch-action:manipulation}
+button{cursor:pointer}
+button:disabled{cursor:wait;opacity:.65}
+.text-button{padding:0;border:0;background:none;font-size:12px;color:#526a81}
+.text-button:hover,a:hover{text-decoration:underline}
+textarea,input{border:1px solid #d4dce4;border-radius:6px;background:#fff;color:#15324f;font-size:15px;line-height:1.65;padding:13px 15px;min-width:0}
+textarea{display:block;width:100%;resize:vertical;min-height:196px}
+textarea::placeholder,input::placeholder{color:#82909e}
+.question-label{display:block;margin:24px 0 10px}
+.question-row{display:flex;gap:10px;align-items:stretch}
+.question-row input{flex:1;width:0}
+.primary-button{border:0;border-radius:6px;background:#ffbd19;color:#15324f;padding:12px 20px;font-size:14px;font-weight:650;white-space:nowrap}
+.primary-button:hover{background:#efaf0d}
+#answer-section{margin-top:32px;padding-top:24px;border-top:1px solid #e5eaf0}
+#answer{font-size:16px;line-height:1.75;white-space:pre-wrap;overflow-wrap:anywhere}
+#error{color:#a52b24;font-size:14px;margin:16px 0 0}
+a{color:inherit;text-underline-offset:3px}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid #3463af;outline-offset:4px}
+input:focus,textarea:focus{outline:2px solid #3463af;outline-offset:2px}
+[hidden]{display:none!important}
+.key-settings{margin:0 0 24px;font-size:12px;color:#526a81}
+summary{cursor:pointer;width:fit-content}
+.key-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:12px}
+.key-row input{flex:1;font-size:13px;padding:8px 10px;min-width:160px}
+.key-settings p,.page-footer p{font-size:12px;line-height:1.7;color:#677789;margin:10px 0}
+.page-footer{margin-top:28px;font-size:12px;color:#677789}
+.page-footer>p{margin:0 0 12px}
+.page-footer details{margin-top:16px}
+.page-footer ol{padding-left:20px;line-height:1.9}
+code{font-size:12px;overflow-wrap:anywhere}
+@media(max-width:520px){.brand-header,main{width:calc(100% - 40px)}.brand-header{padding-block:24px}.brand-lockup{gap:16px;font-size:16px}.runtime-label{font-size:11px}main{margin-top:14px}h1{font-size:30px;margin-bottom:28px}.question-row{flex-direction:column}.question-row input{width:100%}.primary-button{align-self:flex-start}input,textarea{font-size:16px}}
+
+.google-cloud-logo{display:block;width:144px;height:auto;object-fit:contain}@media(max-width:520px){.google-cloud-logo{width:120px}}
+
+.provider-switch{display:flex;gap:20px;border:0;padding:0;margin:0 0 24px}.provider-switch label{display:flex;align-items:center;gap:7px;cursor:pointer}.provider-switch input{accent-color:#15324f}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ask your notes · Gemma</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" type="module"></script>
+</head>
+<body>
+  <header class="brand-header">
+    <div class="brand-lockup"><img src="/mlh-logo.svg" alt="Major League Hacking" width="72" height="32"><span>Gemma</span></div>
+    <img class="google-cloud-logo" src="google-cloud-logo.png" alt="Google Cloud" width="144" height="25">
+  </header>
+  <main>
+    <h1>Ask your notes</h1>
+    <fieldset class="provider-switch" aria-label="Model location">
+      <legend class="sr-only">Model location</legend>
+      <label><input type="radio" name="provider" value="api" checked> Google API</label>
+      <label><input type="radio" name="provider" value="local"> Local</label>
+    </fieldset>
+    <form id="notes-form">
+      <div class="label-row"><label for="notes">Your notes</label></div>
+      <textarea id="notes" rows="7" maxlength="6000" placeholder="Paste your notes here…" required></textarea>
+      <label class="question-label" for="question">Your question</label>
+      <div class="question-row"><input id="question" type="text" maxlength="1000" placeholder="Ask about your notes…" required><button id="ask" class="primary-button" type="submit">Ask Gemma</button></div>
+    </form>
+    <p id="error" role="alert" hidden></p>
+    <section id="answer-section" aria-label="Gemma's answer" hidden><h2>Answer</h2><div id="answer" role="status"></div></section>
+<footer class="page-footer"><p id="model-label">Gemma 4 26B A4B · Google API</p></footer>
+  </main>
+</body>
+</html>
